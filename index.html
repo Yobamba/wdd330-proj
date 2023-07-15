@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Goal Tracker</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <!-- Link to your CSS file -->
   </head>
   <body>
+    <header class="header-h1">
+      <h1>Goal Tracker</h1>
+      <p class="log-in">
+        <span><a href="/view/login.html">Log In</a></span>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="/view/create_goal.html">Create Goal</a></li>
+          <li><a href="/view/progress_track.html">Progress Tracking</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum eos
-        perferendis accusamus neque cum rem. Corporis, tenetur! Aliquid possimus
-        officiis deleniti dignissimos velit corporis reiciendis iure aperiam
-        animi obcaecati!
-      </p>
+      <section class="intro">
+        <h2>Welcome to Goal Tracker</h2>
+
+        <p>
+          Setting goals is essential for personal growth and success. It helps
+          you stay focused, motivated, and track your progress along the way.
+        </p>
+        <blockquote>
+          <p>
+            "Setting goals is the first step in turning the invisible into the
+            visible." - Tony Robbins
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>"A goal properly set is halfway reached." - Zig Ziglar</p>
+        </blockquote>
+      </section>
+      <div><p></p></div>
+      <img
+        src="images/destination.png"
+        id="hero"
+        alt="mountain with a flag on top"
+      />
     </main>
-
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-    <script src="" async defer></script>
+    <footer>
+      <p>&copy; 2023 Goal Tracker. All rights reserved.</p>
+    </footer>
   </body>
 </html>

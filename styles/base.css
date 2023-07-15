@@ -1,0 +1,219 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+/* hero img found at: https://pixabay.com/vectors/destination-goal-purpose-the-goal-1285851/ */
+#hero {
+  width: 100%;
+}
+
+footer p {
+  color: #000000;
+}
+
+main {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: #4c96d7;
+  padding: 20px;
+  margin-bottom: 55px;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* nav a {
+  color: white;
+  text-decoration: none;
+} */
+
+/* Intro Section Styling */
+.intro {
+  background-color: #4c96d7;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* .intro h2 {
+  color: white;
+} */
+
+.intro p {
+  color: #000000;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+blockquote {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4c96d7;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Additional Styling */
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-h1 {
+  margin-top: -10px;
+}
+
+.log-in {
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  color: white;
+}
+.log-in a {
+  color: #000000;
+}
+
+/*Form CSS: */
+form {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="password"] {
+  position: relative;
+}
+
+input[type="password"]::after {
+  content: "?";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #777;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="password"]:hover::after {
+  color: #333;
+}
+
+span {
+  display: block;
+  margin-bottom: 15px;
+  color: #777;
+  font-size: 13px;
+}
+
+button[type="submit"] {
+  background-color: #4c96d7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3679b7;
+}
+
+#successMessage {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Progress Tracking*/
+h1,
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  padding: 5px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.completed {
+  background-color: #a7a2a2;
+  text-decoration: line-through;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 670px) {
+  nav ul {
+    display: grid;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Create Goal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/base.css">
+        <link rel="stylesheet" href="../styles/larger.css">
+    </head>
+    <body>
+        <header class="header-h1">
+            <h1>Goal Tracker</h1>
+            <p class="log-in">
+              <span><a href="/view/login.html">Log In</a></span>
+            </p>
+            <nav>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="/view/create_goal.html">Create Goal</a></li>
+                <li><a href="progress_track.html">Progress Tracking</a></li>
+              </ul>
+            </nav>
+          </header>
+        <h1>Create Goal</h1>
+        <form id="goalForm">
+          <label for="goal">Goal:</label>
+          <input type="text" id="goal" name="goal" required>
+      
+          <label for="goalType">Goal Type:</label>
+          <select id="goalType" name="goalType">
+            <option value="checklist">Checklist Goal</option>
+            <option value="eternal">Eternal Goal</option>
+            <option value="simple">Simple Goal</option>
+          </select>
+      
+          <button type="submit">Create Goal</button>
+        </form>
+      
+        <p id="successMessage"></p>
+      
+        <script src="/scripts/createGoal.js" type="module"></script>
+       
+        <footer>
+          <p>&copy; 2023 Goal Tracker. All rights reserved.</p>
+        </footer>
+      </body>
+    </body>
+</html>
