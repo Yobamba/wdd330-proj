@@ -21,7 +21,7 @@ goals.forEach((goal) => {
   }
 
   const completeButton = document.createElement("button");
-  completeButton.textContent = "Mark as Completed";
+  completeButton.textContent = "Make Progress";
   completeButton.addEventListener("click", () =>
     markAsCompleted(goal, listItem)
   );
