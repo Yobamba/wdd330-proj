@@ -18,6 +18,10 @@ main {
   margin: 0 auto;
 }
 
+.space-filler {
+  height: 450px;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
