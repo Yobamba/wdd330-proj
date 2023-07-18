@@ -38,6 +38,12 @@ if (completedList && inProgressList) {
     } else {
       inProgressList.appendChild(listItem);
     }
+
+    // if (inProgressList.childElementCount === 0) {
+    //   const noGoalsTxt = document.createElement("p");
+    //   noGoalsTxt.textContent = "0 goals to be completed. ";
+    //   inProgressList.appendChild(noGoalsTxt);
+    // }
   });
 }
 

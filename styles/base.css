@@ -109,6 +109,11 @@ a:hover {
   color: #000000;
 }
 
+#acquisitions-div {
+  width: 800px;
+  margin: 0 auto;
+}
+
 /*Form CSS: */
 form {
   max-width: 320px;
@@ -215,5 +220,12 @@ button {
   nav ul {
     display: grid;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #acquisitions,
+  #acquisitions-div {
+    max-width: 395px !important;
   }
 }
