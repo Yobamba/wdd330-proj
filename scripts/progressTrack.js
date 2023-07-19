@@ -27,10 +27,18 @@ if (completedList && inProgressList) {
 
     const completeButton = document.createElement("button");
     completeButton.textContent = "Make Progress";
+    completeButton.classList.add("button");
     completeButton.addEventListener("click", () =>
       markAsCompleted(goal, listItem)
     );
     listItem.appendChild(completeButton);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete Goal";
+    deleteButton.classList.add("button");
+    deleteButton.id = "delete-button";
+    deleteButton.addEventListener("click", () => deleteGoal(goal, listItem));
+    listItem.appendChild(deleteButton);
 
     if (goal.progress === 100) {
       listItem.classList.add("completed");
@@ -49,6 +57,16 @@ if (completedList && inProgressList) {
 
 function storeProgress(progress) {
   localStorage.setItem("progress", progress);
+}
+
+// Function to delete a goal from the goals list
+function deleteGoal(goal, listItem) {
+  const index = goals.indexOf(goal); // Find the index of the goal in the array
+  if (index !== -1) {
+    goals.splice(index, 1); // Remove the goal from the array
+    localStorage.setItem("goals", JSON.stringify(goals)); // Store the updated array back in localStorage
+    listItem.remove(); // Remove the goal's list item from the DOM
+  }
 }
 
 function markAsCompleted(goal, listItem) {
@@ -75,6 +93,7 @@ function markAsCompleted(goal, listItem) {
 
   // Save updated goals list to localStorage
   localStorage.setItem("goals", JSON.stringify(goals));
+  location.reload();
 }
 
 // Export the goals list variable

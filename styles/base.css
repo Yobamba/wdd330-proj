@@ -178,8 +178,16 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+#delete-button {
+  background-color: rgb(238, 41, 41);
+}
+
 button[type="submit"]:hover {
   background-color: #3679b7;
+}
+
+.button {
+  margin: 5px;
 }
 
 #successMessage {
