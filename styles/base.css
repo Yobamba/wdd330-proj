@@ -4,6 +4,11 @@ body {
   background-color: #f2f2f2;
   color: #333;
 }
+
+.filler-div {
+  height: 500px;
+}
+
 /* hero img found at: https://pixabay.com/vectors/destination-goal-purpose-the-goal-1285851/ */
 #hero {
   width: 100%;
@@ -233,11 +238,19 @@ button {
     display: grid;
     margin: 0 auto;
   }
+
+  .filler-div {
+    height: 362px;
+  }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 870px) {
   #acquisitions,
   #acquisitions-div {
     max-width: 395px !important;
   }
+
+  .filler-div {
+    height: 226px;
+}
 }
