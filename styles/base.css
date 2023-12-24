@@ -233,6 +233,23 @@ button {
   cursor: pointer;
 }
 
+#goal-div {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+#goalForm {
+  display: flex;
+  flex-direction: column;
+  height: 155px;
+  width: 800px;
+  }
+  
+  #goal-explanation-ps {
+  width: 290px;
+  }
+
 @media screen and (max-width: 670px) {
   nav ul {
     display: grid;
@@ -241,6 +258,7 @@ button {
 
   .filler-div {
     height: 362px;
+    display: none;
   }
 }
 
@@ -252,5 +270,11 @@ button {
 
   .filler-div {
     height: 226px;
+    display: none;
+}
+
+#goal-div {
+  display: flex;
+  flex-direction: column-reverse;
 }
 }
