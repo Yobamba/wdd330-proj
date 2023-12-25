@@ -93,6 +93,8 @@ footer {
   padding: 20px;
   color: white;
   text-align: center;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Additional Styling */
