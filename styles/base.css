@@ -93,8 +93,6 @@ footer {
   padding: 20px;
   color: white;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
@@ -261,7 +259,7 @@ button {
 
   .filler-div {
     height: 362px;
-    display: none;
+  
   }
 }
 
@@ -272,8 +270,8 @@ button {
   }
 
   .filler-div {
-    height: 226px;
-    display: none;
+    height: 440px;
+
 }
 
 #goal-div {
