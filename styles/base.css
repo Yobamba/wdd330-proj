@@ -261,6 +261,10 @@ button {
     height: 362px;
   
   }
+
+  #goalForm {
+    width: 260px;
+  }
 }
 
 @media screen and (max-width: 870px) {
